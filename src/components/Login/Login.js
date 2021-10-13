@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
     const { signInWithGoogle } = useAuth();
+    const location = useLocation();
     return (
         <div>
             <div className="w-25 mx-auto">
